@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./script.js"></script>
+    <title>Elevator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="floorchanging">
+        <div class="floorchanging__text">Количество этажей</div>
+        <input
+          class="floorchanging__input"
+          type="number"
+          step="1"
+          min="2"
+          max="15"
+          required
+        />
+        <button class="floorchanging__button">Построить!</button>
+      </div>
+      <div class="elevator">
+        <div class="elevator__leftblock" data-floor="3"></div>
+        <div class="elevator__centerblock" data-floor="3"></div>
+        <div class="elevator__rightblock" data-floor="3">
+          <button class="elevator__button"></button>
+          <div class="elevator__number">3</div>
+        </div>
+
+        <div class="elevator__leftblock" data-floor="2"></div>
+        <div class="elevator__centerblock" data-floor="2"></div>
+        <div class="elevator__rightblock" data-floor="2">
+          <button class="elevator__button"></button>
+          <div class="elevator__number">2</div>
+        </div>
+
+        <div class="elevator__leftblock" data-floor="1"></div>
+        <div class="elevator__centerblock" data-floor="1"></div>
+        <div class="elevator__rightblock" data-floor="1">
+          <button class="elevator__button"></button>
+          <div class="elevator__number">1</div>
+        </div>
+
+        <div class="elevator__cabin" data-currentfloor="2"></div>
+      </div>
+    </div>
+  </body>
+</html>
